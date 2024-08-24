@@ -1,0 +1,2 @@
+#define STATE_EMPTY     1001
+#define STATE_OCPY_ONE  2001
