@@ -14,15 +14,6 @@ struct tcp_task{
 #define FLAG_ONE_TIME 0
 #define FLAG_FOREVER  1
 
-// Data struct for a multicast entity, for both tx and rx
-struct mcast_task{
-    char _ipv4_ip[16];    // ipv4 address to bind to
-    char _mcast_grp[16];  // multicast group
-    int(*_handler)(int, char**,int*); // pointer to a handler function at the caller level
-    int  _mcast_port;        // multicast port number
-    int  _lisn_port;         // listening port number
-};
-
 // Yet another socket interface data
 struct socket_info{
     union {
